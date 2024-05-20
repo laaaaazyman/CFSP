@@ -37,16 +37,16 @@ from CFNtools import CFNparser
 # Step 1 : 创建CFNtools对象
 # 默认 huggingface 下载，可能需要代理
 tool = CFNParser() #使用默认参数，等效于下方代码
-tool = CFNParser(ws_pretrained_model_name_or_pat = 'LTP/base', 
+tool = CFNParser(	 ws_pretrained_model_name_or_pat = 'LTP/base', 
 		    	 fi_pretrained_model_name_or_path = '...',
 		       	 ai_pretrained_model_name_or_path = '...',
-		   		 ri_pretrained_model_name_or_path = '...',
+			 ri_pretrained_model_name_or_path = '...',
 		    	 device = 'cpu',
 		    	 n = 10, # n即返回最有可能的n个结果，默认为10
 )
 
 # 给出模型下载或解压后的路径
-tool = CFNParser(ws_pretrained_model_name_or_pat = path/to/ltpbase, 
+tool = CFNParser(	 ws_pretrained_model_name_or_pat = path/to/ltpbase, 
 		    	 fi_pretrained_model_name_or_path = path/to/fi,
 		    	 ai_pretrained_model_name_or_path = path/to/ai,
 		    	 ri_pretrained_model_name_or_path = path/to/ri,
@@ -56,7 +56,7 @@ tool = CFNParser(ws_pretrained_model_name_or_pat = path/to/ltpbase,
 sentences = [
 			'根据建设部的规定，凡属于国际金融组织贷款并由国际公开招标的工程全部由外国投资或赠款建设的工程，以及国内企业在技术上难以单独承包的中外合资建设工程，境外建筑企业在取得中国审批的外国企业承包工程资质证后，皆可进入中国境内承包建设目。',
 			'到去年底，全区各项存款余额达七十一点六三亿元，比上年同期增长百分之四十一点七八，其中，城乡居民储蓄存款为十九点三七亿元，比上年同期增长百分之四十八点二。',
-    		'今天是个好日子，心想的事儿都能成。'
+    			'今天是个好日子，心想的事儿都能成。'
 ]
 
 
@@ -72,7 +72,7 @@ for i in res:
 
 ### 结果样例：
 
-```json
+```python
 {
     "sentence": (json)句子信息--由text和words组成一个元素
     {
