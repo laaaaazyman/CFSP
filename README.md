@@ -17,7 +17,7 @@ pip install CFNtools
 或者选择通过源代码直接安装：
 
 ```shell
-git 
+git https://github.com/laaaaazyman/CFSP.git
 cd CFSP
 pip install .
 ```
@@ -26,7 +26,7 @@ pip install .
 
 |                   分词模型                   | 框架识别模型 | 论元范围识别模型 | 论元角色识别模型 |
 | :------------------------------------------: | :----------: | :--------------: | :--------------: |
-| [🤗LTP/Base](https://huggingface.co/LTP/base) |     论文     |                  |                  |
+| [🤗LTP/Base](https://huggingface.co/LTP/base) |     含作者信息，论文接受后提供     |        含作者信息，论文接受后提供          |         含作者信息，论文接受后提供         |
 
 ## 三.快速开始
 
