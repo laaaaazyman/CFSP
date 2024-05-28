@@ -17,7 +17,7 @@ pip install CFNtools
 或者选择通过源代码直接安装：
 
 ```shell
-git https://github.com/laaaaazyman/CFSP.git
+git clone https://github.com/laaaaazyman/CFSP.git
 cd CFSP
 pip install .
 ```
