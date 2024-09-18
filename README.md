@@ -11,7 +11,7 @@
 此项目的所有功能在Python 3.7，3.8上进行了测试。 CFSP可以通过pip直接下载：
 
 ```shell
-pip install CFNtools
+pip install CFSP
 ```
 
 或者选择通过源代码直接安装：
@@ -33,8 +33,8 @@ pip install .
 ### 提供模型路径，创建后即可使用
 
 ```python
-from CFNtools import CFNparser
-# Step 1 : 创建CFNtools对象
+from CFSP import CFNparser
+# Step 1 : 创建CFSP对象
 # 默认 huggingface 下载，可能需要代理
 tool = CFNParser() #使用默认参数，等效于下方代码
 tool = CFNParser(	 ws_pretrained_model_name_or_pat = 'LTP/base', 
