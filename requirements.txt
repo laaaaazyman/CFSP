@@ -1,5 +1,4 @@
-ltp>=4.2.13
-numpy>=1.20.1
-pydantic>=1.8.2
-torch>=1.9.1
-transformers>=4.5.1
+pydantic==2.4.2
+torch==1.13.1
+transformers==4.24.0
+ltp==4.2.13
