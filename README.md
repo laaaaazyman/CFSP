@@ -8,7 +8,7 @@
 
 ## 一.安装
 
-此项目的所有功能在Python 3.7，3.8上进行了测试。 CFSP可以通过pip直接下载：
+此项目的所有功能进行了测试。 CFSP可以通过pip直接下载：
 
 ```shell
 pip install CFSP
@@ -26,7 +26,7 @@ pip install .
 
 |                   分词模型                   | 框架识别模型 | 论元范围识别模型 | 论元角色识别模型 |
 | :------------------------------------------: | :----------: | :--------------: | :--------------: |
-| [🤗LTP/Base](https://huggingface.co/LTP/base) |     含作者信息，论文接收后提供     |        含作者信息，论文接收后提供          |         含作者信息，论文接收后提供         |
+| [🤗LTP/Base](https://huggingface.co/LTP/base) | 🤗[SXUCFN/CFNParser-FI](https://huggingface.co/SXUCFN/CFNParser-FI) | 🤗[SXUCFN/CFNParser-AI](https://huggingface.co/SXUCFN/CFNParser-AI) |         🤗[SXUCFN/CFNParser-RI](https://huggingface.co/SXUCFN/CFNParser-RI)         |
 
 ## 三.快速开始
 
@@ -197,11 +197,3 @@ res = tool.pipeline(sentences, tasks = ['RI'],targets = tar)
 ```
 
 其余情况如给定句子数与指定targets列表长度不等长，将导致程序报错无法运行。
-
-# 引用
-
-如果您在工作中使用了 CFSP，您可以引用这篇论文
-
-```bibtex
-
-```
