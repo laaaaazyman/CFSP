@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
         name='CFSP',
-        version='0.0.1',
+        version='1.0',
         description='Empower your workflow with our toolkit: Word Segmentation with target word search, Frame Identification, Argument Identification and Role Identification. Chain these functions in a flexible pipeline, allowing users to search for all target words or specify their own, delivering tailored results.',
         author='',
         author_email='',
