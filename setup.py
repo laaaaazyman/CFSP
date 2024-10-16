@@ -7,9 +7,10 @@ setup(
         author='',
         author_email='',
         install_requires=[
-                'pydantic>=2.4.2',
-                'torch>=1.13.1',
-                'transformers>=4.24.0',
+                'numpy>=1.20.1',
+                'pydantic>=1.8.2',
+                'torch>=1.9.1',
+                'transformers>=4.5.1',
                 'ltp>=4.2.13',
         ],
         packages=find_packages(),
