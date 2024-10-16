@@ -33,7 +33,7 @@ pip install .
 ### 提供模型路径，创建后即可使用
 
 ```python
-from CFSP import CFNparser
+from CFSP import CFNParser
 # Step 1 : 创建CFSP对象
 # 默认 huggingface 下载，可能需要代理
 tool = CFNParser() #使用默认参数，等效于下方代码
