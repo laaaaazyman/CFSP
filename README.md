@@ -1,14 +1,10 @@
-| Language                             | version |
-| ------------------------------------ | ------- |
-| [Python](python/interface/README.md) | ≥3.7    |
-
 # CFSP
 
 使用我们的工具包CFSP来分析您输入的多条语句，CFSP将分词与目标词搜索、框架识别、论元范围识别和论元角色识别这些功能链接在一个pipeline函数中，用户根据自身需要指定任务，程序将顺序执行前置任务及相应任务，以json结构返回结果。
 
 ## 一.安装
 
-此项目的所有功能进行了测试。 CFSP可以通过pip直接下载：
+此项目的所有功能在Python 3.7与3.8进行了测试。 CFSP可以通过pip直接下载：
 
 ```shell
 pip install CFNCFSP
