@@ -12,9 +12,9 @@ setup(
         long_description=long_description,
         long_description_content_type="text/markdown",
         install_requires=[
-                'pydantic',
-                'torch==1.9.0, <2.0',
-                'transformers>=4.10.0, <4.27',
+                'pydantic==2.4.2',
+                'torch==1.13.1',
+                'transformers==4.24.0',
                 'ltp==4.2.13',
         ],
         packages=find_packages(),
