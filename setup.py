@@ -20,6 +20,6 @@ setup(
         packages=find_packages(),
         include_package_data=True,
         package_data={
-        'CFSP': ['data/all_targets.bin'],
+        'CFNCFSP': ['data/all_targets.bin'],
         }
 )
