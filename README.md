@@ -40,7 +40,7 @@ tool = CFNParser() #使用默认参数，等效于下方代码
 tool = CFNParser(	 ws_pretrained_model_name_or_pat = 'LTP/base', 
 		    	 fi_pretrained_model_name_or_path = '...',
 		       	 ai_pretrained_model_name_or_path = '...',
-			     ri_pretrained_model_name_or_path = '...',
+ 			 ri_pretrained_model_name_or_path = '...',
 		    	 device = 'cpu',
 		    	 n = 10, # n即返回最有可能的n个结果，默认为10
 )
