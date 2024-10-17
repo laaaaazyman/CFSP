@@ -14,7 +14,7 @@ setup(
         install_requires=[
                 'pydantic==2.4.2',
                 'torch==1.13.1',
-                'transformers==4.24.0'
+                'transformers==4.24.0',
                 'ltp==4.2.13',
         ],
         packages=find_packages(),
