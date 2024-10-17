@@ -5,7 +5,7 @@ with open('README.md', 'r', encoding='utf-8') as fh:
 
 setup(
         name='CFNCFSP',
-        version='1.0',
+        version='1.1',
         description='Empower your workflow with our toolkit: Word Segmentation with target word search, Frame Identification, Argument Identification and Role Identification. Chain these functions in a flexible pipeline, allowing users to search for all target words or specify their own, delivering tailored results.',
         author='',
         author_email='',
