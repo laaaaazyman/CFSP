@@ -138,7 +138,7 @@ class CFNParser():
         """
             依次执行 模型代码
         """
-        output = [i.replace(' ','') for i in inputs]
+        output = inputs
         for task in result_tasks:
             model = self.__get_model(task)
             output : SentenceResult = model.predict(output, targets, n = self.n)
