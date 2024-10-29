@@ -28,7 +28,12 @@ class FIModel(CFNBaseModel):
         n = kwargs.get("n", 10)
         parsing_objs = kwargs.get("parsing_obj")
 
-        processed_data = self.tokenizer.batch_encode_plus([one_sentenceresult.sentence.text for one_sentenceresult in inputs], padding = True)
+        processed_data = {'input_ids': [], 'token_type_ids': [], 'attention_mask': []}
+        max_len = max([len(one_sentenceresult.sentence.text)+2 for one_sentenceresult in inputs])
+        for one_sentenceresult in inputs:
+            one_processed_data = self.tokenizer.encode_plus(list(one_sentenceresult.sentence.text), max_length=max_len, padding='max_length')
+            for key in processed_data:
+                processed_data[key].append(one_processed_data[key])
         input_ids = input_ids = processed_data.data["input_ids"]
         attention_mask = processed_data.data["attention_mask"]
         
