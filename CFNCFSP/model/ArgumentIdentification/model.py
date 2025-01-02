@@ -67,14 +67,21 @@ class AIModel(CFNBaseModel):
                 idx[1] = idx[1].item() - 3
                 idx[2] = idx[2].item() - 3
             
+        real_predict_idx = []
+        for idx in predict_idx:
+            if idx[2] > len(inputs[0].sentence.text) or idx[1] > len(inputs[0].sentence.text) or idx[2] < 0 or idx[1] < 0:
+                continue
+            else: real_predict_idx.append(idx)
+
         for i in range(len(parsing_objs)):
             parsing_objs[i].arguments = [
                 PylemmaTag(
                     start = idx[1],
                     end = idx[2]
                 )
-                for idx in predict_idx if idx[0] == i
+                for idx in real_predict_idx if idx[0] == i
             ]
+
 
         return inputs
     
