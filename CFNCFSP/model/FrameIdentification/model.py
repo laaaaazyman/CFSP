@@ -34,8 +34,8 @@ class FIModel(CFNBaseModel):
             one_processed_data = self.tokenizer.encode_plus(list(one_sentenceresult.sentence.text), max_length=max_len, padding='max_length')
             for key in processed_data:
                 processed_data[key].append(one_processed_data[key])
-        input_ids = input_ids = processed_data.data["input_ids"]
-        attention_mask = processed_data.data["attention_mask"]
+        input_ids = processed_data["input_ids"]
+        attention_mask = processed_data["attention_mask"]
         
         target_objs = [p.target for p in parsing_objs]
 
