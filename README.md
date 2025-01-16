@@ -1,5 +1,5 @@
 # CFSP
-
+![Repository Moved]([https://img.shields.io/badge/repository-moved-blue?style=flat-square](https://github.com/SXUNLP/CFSP))
 使用我们的工具包CFSP来分析您输入的多条语句，CFSP将分词与目标词搜索、框架识别、论元范围识别和论元角色识别这些功能链接在一个pipeline函数中，用户根据自身需要指定任务，程序将顺序执行前置任务及相应任务，以json结构返回结果。
 
 ## 一.安装
